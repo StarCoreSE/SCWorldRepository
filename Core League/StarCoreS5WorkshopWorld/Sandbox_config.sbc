@@ -8,7 +8,7 @@
     <AssemblerEfficiencyMultiplier>1</AssemblerEfficiencyMultiplier>
     <RefinerySpeedMultiplier>1</RefinerySpeedMultiplier>
     <OnlineMode>PUBLIC</OnlineMode>
-    <MaxPlayers>32</MaxPlayers>
+    <MaxPlayers>16</MaxPlayers>
     <MaxFloatingObjects>16</MaxFloatingObjects>
     <TotalBotLimit>32</TotalBotLimit>
     <MaxBackupSaves>0</MaxBackupSaves>
@@ -80,7 +80,7 @@
     <MaxDropContainerRespawnTime>20</MaxDropContainerRespawnTime>
     <EnableTurretsFriendlyFire>true</EnableTurretsFriendlyFire>
     <EnableSubgridDamage>false</EnableSubgridDamage>
-    <SyncDistance>25000</SyncDistance>
+    <SyncDistance>20000</SyncDistance>
     <ExperimentalMode>true</ExperimentalMode>
     <AdaptiveSimulationQuality>true</AdaptiveSimulationQuality>
     <EnableVoxelHand>false</EnableVoxelHand>
@@ -547,7 +547,7 @@
       <PublishedFileId>2880317963</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="AE NPC Dummies - Interactable NPC Blocks v. 0.6.2">
+    <ModItem FriendlyName="AE NPC Dummies - Interactable NPC Blocks v. 0.6.3">
       <Name>2289675817.sbm</Name>
       <PublishedFileId>2289675817</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
@@ -597,7 +597,13 @@
       <PublishedFileId>3387631719</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
+    <ModItem FriendlyName="Leak Finder">
+      <Name>3170315974.sbm</Name>
+      <PublishedFileId>3170315974</PublishedFileId>
+      <PublishedServiceName>Steam</PublishedServiceName>
+      <IsDependency>true</IsDependency>
+    </ModItem>
   </Mods>
   <SessionName>Starcore S5</SessionName>
-  <LastSaveTime>2024-10-08T03:19:54.2368754-05:00</LastSaveTime>
+  <LastSaveTime>2025-01-18T22:29:19.7436403-06:00</LastSaveTime>
 </MyObjectBuilder_WorldConfiguration>

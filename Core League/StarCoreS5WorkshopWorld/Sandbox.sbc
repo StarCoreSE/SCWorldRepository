@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <MyObjectBuilder_Checkpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <CurrentSector x="0" y="0" z="0" />
-  <ElapsedGameTime>1556155120000</ElapsedGameTime>
+  <ElapsedGameTime>1559574800000</ElapsedGameTime>
   <SessionName>Starcore S5</SessionName>
   <SpectatorPosition>
-    <Position x="-9473.61138476307" y="24.052386339753419" z="22.914054070209662" />
+    <Position x="-9473.61138476307" y="24.052386339753419" z="22.914054070206934" />
     <Forward x="-0.5773503" y="-0.577350259" z="-0.577350259" />
-    <Up x="-0.408248276" y="0.8164966" z="-0.408248246" />
+    <Up x="-0.4082483" y="0.8164966" z="-0.408248276" />
     <Orientation>
       <X>-0.279848129</X>
       <Y>0.3647052</Y>
@@ -21,7 +21,7 @@
   <ControlledObject>142040132107931631</ControlledObject>
   <Password />
   <Description />
-  <LastSaveTime>2024-10-08T03:19:54.2368754-05:00</LastSaveTime>
+  <LastSaveTime>2025-01-18T22:29:19.7436403-06:00</LastSaveTime>
   <SpectatorDistance>2.5</SpectatorDistance>
   <WorkshopId xsi:nil="true" />
   <WorkshopId1 xsi:nil="true" />
@@ -51,7 +51,7 @@
     <AssemblerEfficiencyMultiplier>1</AssemblerEfficiencyMultiplier>
     <RefinerySpeedMultiplier>1</RefinerySpeedMultiplier>
     <OnlineMode>PUBLIC</OnlineMode>
-    <MaxPlayers>32</MaxPlayers>
+    <MaxPlayers>16</MaxPlayers>
     <MaxFloatingObjects>16</MaxFloatingObjects>
     <TotalBotLimit>32</TotalBotLimit>
     <MaxBackupSaves>0</MaxBackupSaves>
@@ -123,7 +123,7 @@
     <MaxDropContainerRespawnTime>20</MaxDropContainerRespawnTime>
     <EnableTurretsFriendlyFire>true</EnableTurretsFriendlyFire>
     <EnableSubgridDamage>false</EnableSubgridDamage>
-    <SyncDistance>25000</SyncDistance>
+    <SyncDistance>20000</SyncDistance>
     <ExperimentalMode>true</ExperimentalMode>
     <AdaptiveSimulationQuality>true</AdaptiveSimulationQuality>
     <EnableVoxelHand>false</EnableVoxelHand>
@@ -282,16 +282,83 @@ SiegePowerPercentage=0.9
           <Key>AsteroidFilterAPI_Config_xml</Key>
           <Value xsi:type="xsd:string">ChYKElJlbW92ZU5lYXJHYXNHaWFudBAK</Value>
         </item>
+        <item>
+          <Key>FieldGenerator_Config</Key>
+          <Value xsi:type="xsd:string">[FieldGenerator_Config]
+; 
+;[Maximum number of upgrade modules that can be attached to the Field Generator core.]
+;[Each core has 4 mounting points by default.]
+;[Default: 4]
+MaxModuleCount=4
+; 
+;[Amount of resistance each attached upgrade module provides.]
+;[Default: 10.0]
+PerModuleAmount=10
+; 
+;[The maximum power draw (in MW) when the Field Generator is at full power.]
+;[Default: 500 MW]
+MaxPowerDraw=500
+; 
+;[Baseline power draw (in MW) at minimum field power.]
+;[Default: 50 MW]
+MinPowerDraw=50
+; 
+;[Maximum duration (in seconds) the Field Generator can remain in Siege mode.]
+;[Default: 60s]
+MaxSiegeTime=60
+; 
+;[Power draw (in MW) while Siege mode is active.]
+;[Overrides normal scaled power draw.]
+;[Default: 900 MW]
+SiegePowerDraw=900
+; 
+;[Amount of damage resistance provided by Siege mode (0.0 to 1.0).]
+;[Example: 0.9 means 90% damage reduction from normal.]
+;[Default: 0.9]
+SiegeModeResistence=0.9
+; 
+;[Whether to disable (true) or enable (false) the advanced stability system.]
+;[Default: true]
+SimplifiedMode=true
+; 
+;[Number of damage events (within ResetInterval) needed to trigger stability reduction.]
+;[Default: 6]
+DamageEventThreshold=6
+; 
+;[Time interval (in seconds) between damage counter resets.]
+;[Default: 3]
+ResetInterval=3
+; 
+;[Minimum grid block count used in the size-based stability calculation.]
+;[Default: 2500]
+MinBlockCount=2500
+; 
+;[Maximum grid block count used in the size-based stability calculation.]
+;[Default: 35000]
+MaxBlockCount=35000
+; 
+;[The lower bound of the size modifier.]
+;[Size Modifier can reduce or increase stability change based on the grid size. This Min is the Increase at Min Grid Size]
+;[Default: 1.2]
+SizeModifierMin=1.2
+; 
+;[The upper bound of the size modifier.]
+;[Size Modifier can reduce or increase stability change based on the grid size. This Max is the Reduction at Max Grid Size]
+;[Default: 0.8]
+SizeModifierMax=0.8
+</Value>
+        </item>
       </dictionary>
     </variables>
   </ScriptManagerData>
-  <AppVersion>1204018</AppVersion>
+  <AppVersion>1205026</AppVersion>
   <Factions>
     <Factions>
       <MyObjectBuilder_Faction>
         <FactionId>256211741812614090</FactionId>
         <Tag>SPRT</Tag>
         <Name>Space Pirates</Name>
+        <Description>Fearless pirate raiders scour the stars, seeking vast fortunes as they attack and salvage without mercy.</Description>
         <PrivateInfo />
         <Members>
           <MyObjectBuilder_FactionMember>
@@ -306,11 +373,12 @@ SiegePowerPercentage=0.9
           </MyObjectBuilder_FactionMember>
         </Members>
         <JoinRequests />
-        <AutoAcceptMember>true</AutoAcceptMember>
+        <AutoAcceptMember>false</AutoAcceptMember>
         <AutoAcceptPeace>false</AutoAcceptPeace>
         <AcceptHumans>false</AcceptHumans>
         <EnableFriendlyFire>false</EnableFriendlyFire>
-        <FactionType>Trader</FactionType>
+        <FactionType>Pirate</FactionType>
+        <FactionTypeString>Pirate</FactionTypeString>
         <Stations />
         <CustomColor x="0.0607843138" y="0.199999988" z="0.55" />
         <IconColor x="0" y="-0.8" z="-0.450000018" />
@@ -342,6 +410,7 @@ SiegePowerPercentage=0.9
         <AcceptHumans>true</AcceptHumans>
         <EnableFriendlyFire>true</EnableFriendlyFire>
         <FactionType>None</FactionType>
+        <FactionTypeString>None</FactionTypeString>
         <Stations />
         <CustomColor x="0.8623189" y="0" z="0.0009803846" />
         <IconColor x="0" y="0" z="0.0009803846" />
@@ -373,6 +442,7 @@ SiegePowerPercentage=0.9
         <AcceptHumans>true</AcceptHumans>
         <EnableFriendlyFire>true</EnableFriendlyFire>
         <FactionType>None</FactionType>
+        <FactionTypeString>None</FactionTypeString>
         <Stations />
         <CustomColor x="0" y="0" z="0" />
         <IconColor x="0" y="0" z="0" />
@@ -404,6 +474,7 @@ SiegePowerPercentage=0.9
         <AcceptHumans>true</AcceptHumans>
         <EnableFriendlyFire>true</EnableFriendlyFire>
         <FactionType>None</FactionType>
+        <FactionTypeString>None</FactionTypeString>
         <Stations />
         <CustomColor x="0.316993445" y="0" z="0.55" />
         <IconColor x="0" y="0" z="0.0009803846" />
@@ -435,6 +506,7 @@ SiegePowerPercentage=0.9
         <AcceptHumans>true</AcceptHumans>
         <EnableFriendlyFire>true</EnableFriendlyFire>
         <FactionType>None</FactionType>
+        <FactionTypeString>None</FactionTypeString>
         <Stations />
         <CustomColor x="0.6013072" y="0" z="0.55" />
         <IconColor x="0" y="0" z="0.0009803846" />
@@ -466,10 +538,75 @@ SiegePowerPercentage=0.9
         <AcceptHumans>true</AcceptHumans>
         <EnableFriendlyFire>true</EnableFriendlyFire>
         <FactionType>None</FactionType>
+        <FactionTypeString>None</FactionTypeString>
         <Stations />
         <CustomColor x="0" y="-0.00179374218" z="0.4245098" />
         <IconColor x="0" y="0" z="0.0009803846" />
         <FactionIcon>Textures\FactionLogo\Empty.dds</FactionIcon>
+        <TransferedPCUDelta>0</TransferedPCUDelta>
+        <Score>0</Score>
+        <ObjectivePercentageCompleted>0</ObjectivePercentageCompleted>
+        <FactionIconWorkshopId xsi:nil="true" />
+        <DamageInflicted>
+          <dictionary />
+        </DamageInflicted>
+      </MyObjectBuilder_Faction>
+      <MyObjectBuilder_Faction>
+        <FactionId>221357040578890661</FactionId>
+        <Tag>FCTM</Tag>
+        <Name>The Factorum</Name>
+        <Description>The creators of Prototech. They’ve returned from the edge of known space to seek revenge.</Description>
+        <PrivateInfo />
+        <Members>
+          <MyObjectBuilder_FactionMember>
+            <PlayerId>144115188075855897</PlayerId>
+            <IsLeader>false</IsLeader>
+            <IsFounder>false</IsFounder>
+          </MyObjectBuilder_FactionMember>
+        </Members>
+        <JoinRequests />
+        <AutoAcceptMember>false</AutoAcceptMember>
+        <AutoAcceptPeace>false</AutoAcceptPeace>
+        <AcceptHumans>false</AcceptHumans>
+        <EnableFriendlyFire>false</EnableFriendlyFire>
+        <FactionType>None</FactionType>
+        <FactionTypeString>None</FactionTypeString>
+        <Stations />
+        <CustomColor x="0" y="-0.8" z="-0.450000018" />
+        <IconColor x="0" y="-0.8" z="0.55" />
+        <FactionIcon>Textures\FactionLogo\Factorum.dds</FactionIcon>
+        <TransferedPCUDelta>0</TransferedPCUDelta>
+        <Score>0</Score>
+        <ObjectivePercentageCompleted>0</ObjectivePercentageCompleted>
+        <FactionIconWorkshopId xsi:nil="true" />
+        <DamageInflicted>
+          <dictionary />
+        </DamageInflicted>
+      </MyObjectBuilder_Faction>
+      <MyObjectBuilder_Faction>
+        <FactionId>230727203430084919</FactionId>
+        <Tag>UNKN</Tag>
+        <Name>Unknown</Name>
+        <Description>Space is vast. As humans push into the void of space, sometimes the void pushes back. Danger, mystery, or reward may lie ahead.</Description>
+        <PrivateInfo />
+        <Members>
+          <MyObjectBuilder_FactionMember>
+            <PlayerId>144115188075855898</PlayerId>
+            <IsLeader>false</IsLeader>
+            <IsFounder>false</IsFounder>
+          </MyObjectBuilder_FactionMember>
+        </Members>
+        <JoinRequests />
+        <AutoAcceptMember>false</AutoAcceptMember>
+        <AutoAcceptPeace>false</AutoAcceptPeace>
+        <AcceptHumans>false</AcceptHumans>
+        <EnableFriendlyFire>false</EnableFriendlyFire>
+        <FactionType>None</FactionType>
+        <FactionTypeString>None</FactionTypeString>
+        <Stations />
+        <CustomColor x="0" y="-0.8" z="-0.450000018" />
+        <IconColor x="0" y="-0.8" z="0.55" />
+        <FactionIcon>Textures\FactionLogo\Unknown.dds</FactionIcon>
         <TransferedPCUDelta>0</TransferedPCUDelta>
         <Score>0</Score>
         <ObjectivePercentageCompleted>0</ObjectivePercentageCompleted>
@@ -508,6 +645,14 @@ SiegePowerPercentage=0.9
         <item>
           <Key>144115188075855896</Key>
           <Value>256211741812614090</Value>
+        </item>
+        <item>
+          <Key>144115188075855897</Key>
+          <Value>221357040578890661</Value>
+        </item>
+        <item>
+          <Key>144115188075855898</Key>
+          <Value>230727203430084919</Value>
         </item>
       </dictionary>
     </Players>
@@ -601,6 +746,54 @@ SiegePowerPercentage=0.9
         <FactionId2>229051799490468413</FactionId2>
         <Relation>Enemies</Relation>
         <Reputation>-1500</Reputation>
+      </MyObjectBuilder_FactionRelation>
+      <MyObjectBuilder_FactionRelation>
+        <FactionId1>256211741812614090</FactionId1>
+        <FactionId2>221357040578890661</FactionId2>
+        <Relation>Enemies</Relation>
+        <Reputation>-1500</Reputation>
+      </MyObjectBuilder_FactionRelation>
+      <MyObjectBuilder_FactionRelation>
+        <FactionId1>256211741812614090</FactionId1>
+        <FactionId2>230727203430084919</FactionId2>
+        <Relation>Enemies</Relation>
+        <Reputation>-1500</Reputation>
+      </MyObjectBuilder_FactionRelation>
+      <MyObjectBuilder_FactionRelation>
+        <FactionId1>254526394259295320</FactionId1>
+        <FactionId2>221357040578890661</FactionId2>
+        <Relation>Enemies</Relation>
+        <Reputation>-1500</Reputation>
+      </MyObjectBuilder_FactionRelation>
+      <MyObjectBuilder_FactionRelation>
+        <FactionId1>254526394259295320</FactionId1>
+        <FactionId2>230727203430084919</FactionId2>
+        <Relation>Enemies</Relation>
+        <Reputation>-1500</Reputation>
+      </MyObjectBuilder_FactionRelation>
+      <MyObjectBuilder_FactionRelation>
+        <FactionId1>229051799490468413</FactionId1>
+        <FactionId2>221357040578890661</FactionId2>
+        <Relation>Enemies</Relation>
+        <Reputation>-1500</Reputation>
+      </MyObjectBuilder_FactionRelation>
+      <MyObjectBuilder_FactionRelation>
+        <FactionId1>229051799490468413</FactionId1>
+        <FactionId2>230727203430084919</FactionId2>
+        <Relation>Enemies</Relation>
+        <Reputation>-1500</Reputation>
+      </MyObjectBuilder_FactionRelation>
+      <MyObjectBuilder_FactionRelation>
+        <FactionId1>224231618273036389</FactionId1>
+        <FactionId2>221357040578890661</FactionId2>
+        <Relation>Friends</Relation>
+        <Reputation>1500</Reputation>
+      </MyObjectBuilder_FactionRelation>
+      <MyObjectBuilder_FactionRelation>
+        <FactionId1>224231618273036389</FactionId1>
+        <FactionId2>230727203430084919</FactionId2>
+        <Relation>Friends</Relation>
+        <Reputation>1500</Reputation>
       </MyObjectBuilder_FactionRelation>
     </Relations>
     <RelationsWithPlayers>
@@ -853,6 +1046,7 @@ SiegePowerPercentage=0.9
         <IdentityId>144115188075855873</IdentityId>
         <DiscoveredFactions>
           <long>256211741812614090</long>
+          <long>230727203430084919</long>
         </DiscoveredFactions>
       </MyObjectBuilder_FactionsVisEntry>
     </PlayerToFactionsVis>
@@ -1236,7 +1430,7 @@ SiegePowerPercentage=0.9
       <PublishedFileId>2880317963</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="AE NPC Dummies - Interactable NPC Blocks v. 0.6.2">
+    <ModItem FriendlyName="AE NPC Dummies - Interactable NPC Blocks v. 0.6.3">
       <Name>2289675817.sbm</Name>
       <PublishedFileId>2289675817</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
@@ -1281,8 +1475,18 @@ SiegePowerPercentage=0.9
       <PublishedFileId>2956906605</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
+    <ModItem FriendlyName="DoorDestroyer">
+      <Name>3387631719.sbm</Name>
+      <PublishedFileId>3387631719</PublishedFileId>
+      <PublishedServiceName>Steam</PublishedServiceName>
+    </ModItem>
+    <ModItem FriendlyName="Leak Finder">
+      <Name>3170315974.sbm</Name>
+      <PublishedFileId>3170315974</PublishedFileId>
+      <PublishedServiceName>Steam</PublishedServiceName>
+      <IsDependency>true</IsDependency>
+    </ModItem>
   </Mods>
-  <CreativeTools />
   <Scenario Type="MyObjectBuilder_ScenarioDefinition" Subtype="EmptyWorld" />
   <RespawnCooldowns />
   <Identities>
@@ -1291,13 +1495,13 @@ SiegePowerPercentage=0.9
       <DisplayName>Invalid</DisplayName>
       <CharacterEntityId>142040132107931631</CharacterEntityId>
       <Model>Default_Astronaut</Model>
-      <ColorMask x="0.997916639" y="0.322314024" z="-0.05098039" />
+      <ColorMask x="0.05" y="0.199999988" z="0.388345033" />
       <BlockLimitModifier>0</BlockLimitModifier>
-      <LastLoginTime>2024-10-08T03:19:27.4721632-05:00</LastLoginTime>
+      <LastLoginTime>2025-01-18T22:23:18.5791453-06:00</LastLoginTime>
       <SavedCharacters>
         <long>142040132107931631</long>
       </SavedCharacters>
-      <LastLogoutTime>2024-10-08T03:19:54.237377-05:00</LastLogoutTime>
+      <LastLogoutTime>2025-01-18T22:29:19.7441408-06:00</LastLogoutTime>
       <RespawnShips />
       <LastDeathPosition>
         <X>-7180.1989407034152</X>
@@ -1313,7 +1517,7 @@ SiegePowerPercentage=0.9
       <DisplayName>Space Pirates</DisplayName>
       <CharacterEntityId>0</CharacterEntityId>
       <BlockLimitModifier>0</BlockLimitModifier>
-      <LastLoginTime>2024-10-08T03:19:27.4721632-05:00</LastLoginTime>
+      <LastLoginTime>2025-01-18T22:23:18.5786451-06:00</LastLoginTime>
       <SavedCharacters />
       <LastLogoutTime>2023-09-08T05:47:42.0837142-05:00</LastLogoutTime>
       <RespawnShips />
@@ -1327,7 +1531,7 @@ SiegePowerPercentage=0.9
       <DisplayName>ADM NPC9445</DisplayName>
       <CharacterEntityId>0</CharacterEntityId>
       <BlockLimitModifier>0</BlockLimitModifier>
-      <LastLoginTime>2024-10-08T03:19:27.4721632-05:00</LastLoginTime>
+      <LastLoginTime>2025-01-18T22:23:18.5786451-06:00</LastLoginTime>
       <SavedCharacters />
       <LastLogoutTime>2023-09-08T05:47:42.4997146-05:00</LastLogoutTime>
       <RespawnShips />
@@ -1341,7 +1545,7 @@ SiegePowerPercentage=0.9
       <DisplayName>OUT NPC1742</DisplayName>
       <CharacterEntityId>0</CharacterEntityId>
       <BlockLimitModifier>0</BlockLimitModifier>
-      <LastLoginTime>2024-10-08T03:19:27.4721632-05:00</LastLoginTime>
+      <LastLoginTime>2025-01-18T22:23:18.5786451-06:00</LastLoginTime>
       <SavedCharacters />
       <LastLogoutTime>2023-09-08T05:47:42.4997146-05:00</LastLogoutTime>
       <RespawnShips />
@@ -1355,7 +1559,7 @@ SiegePowerPercentage=0.9
       <DisplayName>NEU NPC3649</DisplayName>
       <CharacterEntityId>0</CharacterEntityId>
       <BlockLimitModifier>0</BlockLimitModifier>
-      <LastLoginTime>2024-10-08T03:19:27.4721632-05:00</LastLoginTime>
+      <LastLoginTime>2025-01-18T22:23:18.5786451-06:00</LastLoginTime>
       <SavedCharacters />
       <LastLogoutTime>2023-09-08T05:47:42.4997146-05:00</LastLogoutTime>
       <RespawnShips />
@@ -1369,7 +1573,7 @@ SiegePowerPercentage=0.9
       <DisplayName>BLU NPC1764</DisplayName>
       <CharacterEntityId>0</CharacterEntityId>
       <BlockLimitModifier>0</BlockLimitModifier>
-      <LastLoginTime>2024-10-08T03:19:27.4721632-05:00</LastLoginTime>
+      <LastLoginTime>2025-01-18T22:23:18.5786451-06:00</LastLoginTime>
       <SavedCharacters />
       <LastLogoutTime>2023-09-08T05:47:42.4997146-05:00</LastLogoutTime>
       <RespawnShips />
@@ -1383,7 +1587,7 @@ SiegePowerPercentage=0.9
       <DisplayName>RED NPC6284</DisplayName>
       <CharacterEntityId>0</CharacterEntityId>
       <BlockLimitModifier>0</BlockLimitModifier>
-      <LastLoginTime>2024-10-08T03:19:27.4721632-05:00</LastLoginTime>
+      <LastLoginTime>2025-01-18T22:23:18.5786451-06:00</LastLoginTime>
       <SavedCharacters />
       <LastLogoutTime>2023-09-08T05:47:42.4997146-05:00</LastLogoutTime>
       <RespawnShips />
@@ -1397,9 +1601,37 @@ SiegePowerPercentage=0.9
       <DisplayName>Pirate</DisplayName>
       <CharacterEntityId>0</CharacterEntityId>
       <BlockLimitModifier>0</BlockLimitModifier>
-      <LastLoginTime>2024-10-08T03:19:29.7141596-05:00</LastLoginTime>
+      <LastLoginTime>2025-01-18T22:23:22.0529868-06:00</LastLoginTime>
       <SavedCharacters />
       <LastLogoutTime>2023-09-08T05:47:43.2247148-05:00</LastLogoutTime>
+      <RespawnShips />
+      <LastDeathPosition xsi:nil="true" />
+      <ActiveContracts />
+      <TransferedPCUDelta>0</TransferedPCUDelta>
+      <IsGlobalEncounterSpawner>false</IsGlobalEncounterSpawner>
+    </MyObjectBuilder_Identity>
+    <MyObjectBuilder_Identity>
+      <IdentityId>144115188075855897</IdentityId>
+      <DisplayName>The Factorum</DisplayName>
+      <CharacterEntityId>0</CharacterEntityId>
+      <BlockLimitModifier>0</BlockLimitModifier>
+      <LastLoginTime>2025-01-18T22:23:19.2812498-06:00</LastLoginTime>
+      <SavedCharacters />
+      <LastLogoutTime>2025-01-18T22:23:19.2812498-06:00</LastLogoutTime>
+      <RespawnShips />
+      <LastDeathPosition xsi:nil="true" />
+      <ActiveContracts />
+      <TransferedPCUDelta>0</TransferedPCUDelta>
+      <IsGlobalEncounterSpawner>false</IsGlobalEncounterSpawner>
+    </MyObjectBuilder_Identity>
+    <MyObjectBuilder_Identity>
+      <IdentityId>144115188075855898</IdentityId>
+      <DisplayName>Unknown</DisplayName>
+      <CharacterEntityId>0</CharacterEntityId>
+      <BlockLimitModifier>0</BlockLimitModifier>
+      <LastLoginTime>2025-01-18T22:23:19.2867545-06:00</LastLoginTime>
+      <SavedCharacters />
+      <LastLogoutTime>2025-01-18T22:23:19.2867545-06:00</LastLogoutTime>
       <RespawnShips />
       <LastDeathPosition xsi:nil="true" />
       <ActiveContracts />
@@ -1513,6 +1745,7 @@ SiegePowerPercentage=0.9
           <BuildColorSlot>0</BuildColorSlot>
           <IsWildlifeAgent>false</IsWildlifeAgent>
           <PlatformIcon></PlatformIcon>
+          <GameAcronym>SE</GameAcronym>
         </Value>
       </item>
     </dictionary>
@@ -1600,8 +1833,6 @@ SiegePowerPercentage=0.9
       </item>
     </dictionary>
   </AllPlayersColors>
-  <ChatHistory />
-  <FactionChatHistory />
   <NonPlayerIdentities>
     <long>144115188075855896</long>
     <long>144115188075855897</long>
@@ -1761,10 +1992,19 @@ SiegePowerPercentage=0.9
     <MyObjectBuilder_SessionComponent xsi:type="MyObjectBuilder_AutopilotPathfindingComponent">
       <Definition Type="MyObjectbuilder_AutopilotPathfindingComponentDefinition" Subtype="Default" />
     </MyObjectBuilder_SessionComponent>
+    <MyObjectBuilder_SessionComponent xsi:type="MyObjectBuilder_GlobalEncounters">
+      <Definition Type="MyObjectbuilder_GlobalEncountersGeneratorDefinition" Subtype="Default" />
+      <Timers>
+        <dictionary />
+      </Timers>
+    </MyObjectBuilder_SessionComponent>
     <MyObjectBuilder_SessionComponent xsi:type="MyObjectBuilder_SessionComponentNPCGridClaim">
       <NPCGrids>
         <dictionary />
       </NPCGrids>
+    </MyObjectBuilder_SessionComponent>
+    <MyObjectBuilder_SessionComponent xsi:type="MyObjectBuilder_PlanetaryEncounters">
+      <Installations />
     </MyObjectBuilder_SessionComponent>
     <MyObjectBuilder_SessionComponent xsi:type="MyObjectBuilder_SpaceFaunaComponent">
       <SpawnInfos />
@@ -1780,8 +2020,11 @@ SiegePowerPercentage=0.9
     </MyObjectBuilder_SessionComponent>
     <MyObjectBuilder_SessionComponent xsi:type="MyObjectBuilder_SectorWeatherComponent">
       <BaseSunDirection x="0.339467347" y="0.709795356" z="-0.617213368" />
-      <SunDirectionNormalized x="0.938571334" y="0.2240219" z="0.26248464" />
+      <SunDirectionNormalized x="0.9394142" y="0.240700513" z="0.244057879" />
       <WeatherPlanetData />
+    </MyObjectBuilder_SessionComponent>
+    <MyObjectBuilder_SessionComponent xsi:type="MyObjectBuilder_SessionComponentAntiCheat">
+      <Definition Type="MyObjectbuilder_SessionComponentAntiCheatDefinition" Subtype="Default" />
     </MyObjectBuilder_SessionComponent>
     <MyObjectBuilder_SessionComponent xsi:type="MyObjectBuilder_SessionComponentAssetModifiers" />
     <MyObjectBuilder_SessionComponent xsi:type="MyObjectBuilder_SessionComponentContainerDropSystem">
@@ -64163,7 +64406,7 @@ SiegePowerPercentage=0.9
     </MyObjectBuilder_SessionComponent>
     <MyObjectBuilder_SessionComponent xsi:type="MyObjectBuilder_AntennaSessionComponent" />
     <MyObjectBuilder_SessionComponent xsi:type="MyObjectBuilder_EnvironmentBotSpawningSystem">
-      <TimeSinceLastEventInMs>30001</TimeSinceLastEventInMs>
+      <TimeSinceLastEventInMs>26183</TimeSinceLastEventInMs>
     </MyObjectBuilder_SessionComponent>
     <MyObjectBuilder_SessionComponent xsi:type="MyObjectBuilder_TradingManager" />
     <MyObjectBuilder_SessionComponent xsi:type="MyObjectBuilder_CoordinateSystem">
@@ -64367,6 +64610,22 @@ SiegePowerPercentage=0.9
             <Log />
           </Account>
         </MyObjectBuilder_AccountEntry>
+        <MyObjectBuilder_AccountEntry>
+          <OwnerIdentifier>221357040578890661</OwnerIdentifier>
+          <Account>
+            <OwnerIdentifier>221357040578890661</OwnerIdentifier>
+            <Balance>0</Balance>
+            <Log />
+          </Account>
+        </MyObjectBuilder_AccountEntry>
+        <MyObjectBuilder_AccountEntry>
+          <OwnerIdentifier>230727203430084919</OwnerIdentifier>
+          <Account>
+            <OwnerIdentifier>230727203430084919</OwnerIdentifier>
+            <Balance>0</Balance>
+            <Log />
+          </Account>
+        </MyObjectBuilder_AccountEntry>
       </Accounts>
       <OverallBalance>100090000</OverallBalance>
     </MyObjectBuilder_SessionComponent>
@@ -64418,28 +64677,25 @@ SiegePowerPercentage=0.9
     <string>Models\Characters\Astronaut\SE_astronaut.mwm</string>
     <string>Models\Cubes\Large\Armor\SquarePlate.mwm</string>
     <string>Models\Cubes\Large\Armor\SquarePlateSlope2BaseFront.mwm</string>
-    <string>Models\Cubes\Large\Armor\SquarePlateCenter.mwm</string>
-    <string>Models\Cubes\Large\Armor\CornerTriangleRightPlate.mwm</string>
-    <string>Models\Cubes\Large\Armor\HalfSlopeInvertedLeft.mwm</string>
     <string>Models\Cubes\Large\Armor\CornerTriangleLeftPlateCorner2TipFront.mwm</string>
-    <string>Models\Cubes\Large\Armor\SquarePlateSlope2BaseTop.mwm</string>
     <string>Models\Cubes\Large\Armor\CornerTriangleLeftPlateSlope2Tip.mwm</string>
-    <string>Models\Cubes\Large\Armor\SlopePlateSlab.mwm</string>
-    <string>Models\Cubes\Large\Armor\HalfSlopedCornerBaseTop.mwm</string>
-    <string>Models\Cubes\Large\Armor\SlopePlate.mwm</string>
+    <string>Models\Cubes\Large\Armor\CornerTriangleRightPlateSlope2Tip.mwm</string>
     <string>Models\Cubes\Large\Armor\CornerTriangleLeftPlate.mwm</string>
-    <string>Models\Cubes\Large\Armor\SquarePlateSlope2BaseLeft.mwm</string>
+    <string>Models\Cubes\Large\Armor\SlopePlateSlab.mwm</string>
     <string>Models\Cubes\Large\Armor\SlopePlateSlope2Tip.mwm</string>
     <string>Models\Cubes\Large\Armor\SquarePlateSlope2BaseRight.mwm</string>
     <string>Models\Cubes\Large\Armor\HalfCornerDiagonal.mwm</string>
+    <string>Models\Cubes\Large\Armor\SquarePlateCenter.mwm</string>
     <string>Models\Cubes\Large\Armor\HalfSlopeInvertedRight.mwm</string>
-    <string>Models\Cubes\Large\Armor\CornerTriangleRightPlateSlope2Tip.mwm</string>
-    <string>Models\Cubes\Large\Armor\HalfSlopeInvertedDiagonal.mwm</string>
+    <string>Models\Cubes\Large\Armor\CornerTriangleRightPlate.mwm</string>
+    <string>Models\Cubes\Large\Armor\SquarePlateSlope2BaseTop.mwm</string>
+    <string>Models\Cubes\Large\Armor\SlopePlate.mwm</string>
     <string>Models\Cubes\Large\Armor\SquarePlateSlope2TipBack.mwm</string>
+    <string>Models\Cubes\Large\Armor\SquarePlateSlope2BaseLeft.mwm</string>
+    <string>Models\Cubes\Large\Armor\HalfSlopedCornerBaseTop.mwm</string>
+    <string>Models\Cubes\Large\Armor\HalfSlopeInvertedDiagonal.mwm</string>
+    <string>Models\Cubes\Large\Armor\HalfSlopeInvertedLeft.mwm</string>
   </VicinityArmorModelsCache>
   <VicinityVoxelCache />
   <WorldId>dd5139a0-a776-4b1d-a075-50e7e316b75b</WorldId>
-  <RemoteAdminSettings>
-    <dictionary />
-  </RemoteAdminSettings>
 </MyObjectBuilder_Checkpoint>

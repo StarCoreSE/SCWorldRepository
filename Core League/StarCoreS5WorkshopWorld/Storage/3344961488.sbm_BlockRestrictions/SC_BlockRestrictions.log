@@ -1,5 +1,5 @@
-[19:50:23.489] [T1] [DS=False] DEBUG | Log Started
-[19:50:23.574] [T1] [DS=False] DEBUG | BeforeStart() - Checking Group Settings:
+[22:23:19.666] [T1] [DS=False] DEBUG | Log Started
+[22:23:19.773] [T1] [DS=False] DEBUG | BeforeStart() - Checking Group Settings:
 -> GroupName = UniqueNameHere
 ->-> Setting has 1 definitions:
 ->->-> Definition = (null)/(null)
@@ -127,7 +127,6 @@ BeforeStart() - Checking Config for saved settings
 ->-> Definition added to restricted list
 ->-> Setting added successfully
 -> Setting = MyObjectBuilder_AirtightHangarDoor/(null)
-->-> Definition added to restricted list
 ->-> Setting added successfully
 -> Setting = MyObjectBuilder_AirtightSlideDoor/LargeBlockSlideDoor
 ->-> Setting added successfully
@@ -175,7 +174,6 @@ BeforeStart() - Checking Config for saved settings
 -> Setting = MyObjectBuilder_RadioAntenna/LargeBlockRadioAntennaDish
 ->-> Setting added successfully
 -> Setting = MyObjectBuilder_Door/LargeBlockGate
-->-> Definition added to restricted list
 ->-> Setting added successfully
 -> Setting = MyObjectBuilder_Door/LargeBlockOffsetDoor
 ->-> Setting added successfully
@@ -1716,8 +1714,7 @@ BeforeStart() - Checking Config for saved settings
 -> Setting = MyObjectBuilder_ConveyorSorter/TaiidanRail
 ->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/TaiidanSingleHangar
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/AITaiidanRailCompact
 ->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/MA_Guardian
@@ -2110,17 +2107,13 @@ BeforeStart() - Checking Config for saved settings
 -> Setting = MyObjectBuilder_OxygenGenerator/Charger
 ->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/TaiidanRailBomber
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/TaiidanRailFighter
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/TaiidanHangarBomber
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/TaiidanHangarFighter
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/HAS_Cyclops
 ->-> Definition added to restricted list
 ->-> Setting added successfully
@@ -2131,8 +2124,7 @@ BeforeStart() - Checking Config for saved settings
 -> Setting = MyObjectBuilder_ConveyorSorter/PriestReskin_Block
 ->-> Setting added successfully
 -> Setting = MyObjectBuilder_ConveyorSorter/TaiidanHangarBomberMedium
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/HAS_Crossfield
 ->-> Definition added to restricted list
 ->-> Setting added successfully
@@ -2415,11 +2407,9 @@ BeforeStart() - Checking Config for saved settings
 -> Setting = MyObjectBuilder_ConveyorSorter/TaiidanRailFighterAdmin
 ->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/ADMTaiidanHangarFighter
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/ADMTaiidanHangarBomber
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_SmallMissileLauncher/LargeFlareLauncher
 ->-> Definition added to restricted list
 ->-> Setting added successfully
@@ -2915,54 +2905,43 @@ BeforeStart() - Checking Config for saved settings
 -> Setting = MyObjectBuilder_Collector/SC_RCS_Computer_small
 ->-> Setting added successfully
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_ArbiterKineticBurstCannon
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_FlakTurret
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_HeavyMassDriverTurret
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_HeavyTorpedoLauncher
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_IonCannonFixed
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_IonTurret
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_MediumIonTurret
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_KineticAutogunPDC
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_MediumKineticTurret
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_MediumMassDriverSingleTurret
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_MediumMassDriverTurret
-->-> Definition added to restricted list
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_DroneHangarHiigara
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_DroneHangarHiigara_Rail
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_DroneBomberHangarHiigara
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_DroneBomberHangarHiigara_Rail
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_DroneHangarHiigara_Tall
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_DroneHangarHiigara_TallFlat
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_DroneBomberHangarHiigara_Tall
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_ConveyorSorter/CHP_DroneBomberHangarHiigara_TallFlat
-->-> Setting added successfully
+->-> Unable to retrieve MyCubeBlockDefinition
 -> Setting = MyObjectBuilder_Collector/FieldGen_Capacity_Upgrade
 ->-> Setting added successfully
 -> Setting = MyObjectBuilder_Collector/FieldGen_Core
@@ -2986,6 +2965,114 @@ BeforeStart() - Checking Config for saved settings
 ->-> Setting added successfully
 -> Setting = MyObjectBuilder_ConveyorSorter/AegisLascannonTurret
 ->-> Definition added to restricted list
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ExtendedPistonBase/LargePistonBaseReskin
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ExtendedPistonBase/SmallPistonBaseReskin
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_Door/LargeBlockSmallGate
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_Door/LargeBlockEvenWideDoor
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_RadioAntenna/LargeBlockCompactRadioAntennaReskin
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_RadioAntenna/SmallBlockCompactRadioAntennaReskin
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_Cockpit/LargeBlockModularBridgeCockpit
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ButtonPanel/LargeBlockModularBridgeButtonPanel
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ReflectorLight/LargeBlockFloodlight
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ReflectorLight/LargeBlockFloodlightAngled
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ReflectorLight/LargeBlockFloodlightCornerL
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ReflectorLight/LargeBlockFloodlightCornerR
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ReflectorLight/SmallBlockFloodlight
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ReflectorLight/SmallBlockFloodlightAngled
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ReflectorLight/SmallBlockFloodlightCornerL
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ReflectorLight/SmallBlockFloodlightCornerR
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ReflectorLight/SmallBlockFloodlightDown
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ReflectorLight/SmallBlockFloodlightAngledRotated
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_LargeMissileTurret/LargeMissileTurretReskin
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_LargeMissileTurret/SmallMissileTurretReskin
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_LargeGatlingTurret/LargeGatlingTurretReskin
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_LargeGatlingTurret/SmallGatlingTurretReskin
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_Cockpit/LargeBlockCaptainDesk
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_Jukebox/SmallBlockJukeboxReskin
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_TerminalBlock/SmallBlockFirstAidCabinet
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_CryoChamber/SmallBlockBunkBed
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_TerminalBlock/SmallBlockKitchenOven
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_TerminalBlock/SmallBlockKitchenMicrowave
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_TerminalBlock/SmallBlockKitchenFridge
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_CargoContainer/SmallBlockModularContainer
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_Cockpit/SmallBlockFlushCockpit
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ShipConnector/LargeBlockInsetConnector
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ShipConnector/SmallBlockInsetConnector
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ShipConnector/SmallBlockInsetConnectorMedium
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_JumpDrive/LargePrototechJumpDrive
+->-> Definition added to restricted list
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_JumpDrive/SmallPrototechJumpDrive
+->-> Definition added to restricted list
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_Thrust/LargeBlockPrototechThruster
+->-> Definition added to restricted list
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_Thrust/SmallBlockPrototechThruster
+->-> Definition added to restricted list
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_Refinery/LargePrototechRefinery
+->-> Definition added to restricted list
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_Refinery/SmallPrototechRefinery
+->-> Definition added to restricted list
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_Assembler/LargePrototechAssembler
+->-> Definition added to restricted list
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_Gyro/LargeBlockPrototechGyro
+->-> Definition added to restricted list
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_Gyro/SmallBlockPrototechGyro
+->-> Definition added to restricted list
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_BatteryBlock/LargeBlockPrototechBattery
+->-> Definition added to restricted list
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_BatteryBlock/SmallBlockPrototechBattery
+->-> Definition added to restricted list
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_Drill/LargeBlockPrototechDrill
+->-> Definition added to restricted list
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_ConveyorSorter/127mmMk56
+->-> Setting added successfully
+-> Setting = MyObjectBuilder_OxygenTank/Caster_ConveyorCap
 ->-> Setting added successfully
 
 BeforeStart() - Checking Entity Components
