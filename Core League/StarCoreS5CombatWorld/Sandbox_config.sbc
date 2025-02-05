@@ -562,6 +562,11 @@
       <PublishedFileId>3387631719</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
+    <ModItem FriendlyName="FontCore">
+      <Name>3421301705.sbm</Name>
+      <PublishedFileId>3421301705</PublishedFileId>
+      <PublishedServiceName>Steam</PublishedServiceName>
+    </ModItem>
   </Mods>
   <SessionName>Starcore S5</SessionName>
   <LastSaveTime>2025-01-18T22:29:19.7436403-06:00</LastSaveTime>
