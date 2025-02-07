@@ -567,9 +567,9 @@
       <PublishedFileId>3421301705</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="Build Info">
-      <Name>514062285.sbm</Name>
-      <PublishedFileId>514062285</PublishedFileId>
+    <ModItem FriendlyName="FontCore">
+      <Name>3421301705.sbm</Name>
+      <PublishedFileId>3421301705</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
   </Mods>
