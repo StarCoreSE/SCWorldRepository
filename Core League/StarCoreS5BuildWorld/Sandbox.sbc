@@ -2,7 +2,7 @@
 <MyObjectBuilder_Checkpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <CurrentSector x="0" y="0" z="0" />
   <ElapsedGameTime>1559574800000</ElapsedGameTime>
-  <SessionName>Starcore S5</SessionName>
+  <SessionName>Starcore S5 Build World</SessionName>
   <SpectatorPosition>
     <Position x="-9473.61138476307" y="24.052386339753419" z="22.914054070206934" />
     <Forward x="-0.5773503" y="-0.577350259" z="-0.577350259" />
