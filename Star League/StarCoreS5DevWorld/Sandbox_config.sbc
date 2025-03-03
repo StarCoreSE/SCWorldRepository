@@ -603,6 +603,12 @@
       <PublishedServiceName>Steam</PublishedServiceName>
       <IsDependency>true</IsDependency>
     </ModItem>
+    <ModItem FriendlyName="Stealth Drive - Starcore Edition">
+      <Name>3436896074.sbm</Name>
+      <PublishedFileId>3436896074</PublishedFileId>
+      <PublishedServiceName>Steam</PublishedServiceName>
+      <IsDependency>true</IsDependency>
+    </ModItem>
   </Mods>
   <SessionName>Starcore S5 Dev World</SessionName>
   <LastSaveTime>2025-01-18T22:29:19.7436403-06:00</LastSaveTime>
