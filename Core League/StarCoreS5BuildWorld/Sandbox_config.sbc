@@ -172,6 +172,11 @@
     <MaxHudChatMessageCount>100</MaxHudChatMessageCount>
   </Settings>
   <Mods>
+    <ModItem FriendlyName="SCPracticeAI">
+      <Name>3024311955.sbm</Name>
+      <PublishedFileId>3024311955</PublishedFileId>
+      <PublishedServiceName>Steam</PublishedServiceName>
+    </ModItem>
     <ModItem FriendlyName="StarCore Skybox - Cryogenic Conclusion">
       <Name>3384014551.sbm</Name>
       <PublishedFileId>3384014551</PublishedFileId>
@@ -597,13 +602,7 @@
       <PublishedFileId>3387631719</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="Leak Finder">
-      <Name>3170315974.sbm</Name>
-      <PublishedFileId>3170315974</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-      <IsDependency>true</IsDependency>
-    </ModItem>
   </Mods>
-  <SessionName>Starcore S5</SessionName>
+  <SessionName>Starcore S5 Build World</SessionName>
   <LastSaveTime>2025-01-18T22:29:19.7436403-06:00</LastSaveTime>
 </MyObjectBuilder_WorldConfiguration>
