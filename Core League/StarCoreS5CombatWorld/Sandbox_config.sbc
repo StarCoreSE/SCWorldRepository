@@ -51,7 +51,7 @@
     <EnableEncounters>false</EnableEncounters>
     <EnableConvertToStation>true</EnableConvertToStation>
     <StationVoxelSupport>false</StationVoxelSupport>
-    <EnableSunRotation>true</EnableSunRotation>
+    <EnableSunRotation>false</EnableSunRotation>
     <EnableRespawnShips>false</EnableRespawnShips>
     <ScenarioEditMode>false</ScenarioEditMode>
     <Scenario>false</Scenario>
