@@ -187,13 +187,11 @@
       <PublishedFileId>3149625043</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-	<!--
     <ModItem FriendlyName="WC Radar">
       <Name>2957590632.sbm</Name>
       <PublishedFileId>2957590632</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-	-->
     <ModItem FriendlyName="Upgradable Reactors">
       <Name>2961585236.sbm</Name>
       <PublishedFileId>2961585236</PublishedFileId>
