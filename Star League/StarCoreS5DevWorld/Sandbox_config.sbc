@@ -170,6 +170,9 @@
     <PlanetaryEncounterDespawnTimeout>120</PlanetaryEncounterDespawnTimeout>
     <LimitBlocksBy>BlockPairName</LimitBlocksBy>
     <MaxHudChatMessageCount>100</MaxHudChatMessageCount>
+    <EnableShareInertiaTensor>true</EnableShareInertiaTensor>
+    <EnableUnsafePistonImpulses>true</EnableUnsafePistonImpulses>
+    <EnableUnsafeRotorTorques>true</EnableUnsafeRotorTorques>
   </Settings>
   <Mods>
     <ModItem FriendlyName="StarCore Skybox - Cryogenic Conclusion">
