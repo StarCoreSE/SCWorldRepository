@@ -610,7 +610,11 @@
       <Name>3436896074.sbm</Name>
       <PublishedFileId>3436896074</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
-      <IsDependency>true</IsDependency>
+    </ModItem>
+    <ModItem FriendlyName="FixBlockCategories">
+      <Name>3473465973.sbm</Name>
+      <PublishedFileId>3473465973</PublishedFileId>
+      <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
   </Mods>
   <SessionName>Starcore S5 Dev World</SessionName>

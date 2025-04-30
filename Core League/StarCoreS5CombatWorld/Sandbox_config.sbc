@@ -580,6 +580,11 @@
       <PublishedFileId>3421301705</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
+	<ModItem FriendlyName="FixBlockCategories">
+      <Name>3473474105.sbm</Name>
+      <PublishedFileId>3473474105</PublishedFileId>
+      <PublishedServiceName>Steam</PublishedServiceName>
+    </ModItem>
   </Mods>
   <SessionName>Starcore S5 Combat World</SessionName>
   <LastSaveTime>2025-01-18T22:29:19.7436403-06:00</LastSaveTime>
