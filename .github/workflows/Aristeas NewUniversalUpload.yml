@@ -1,6 +1,7 @@
 name: Aristeas NewUniversalUpload
 on:
   workflow_dispatch:
+  push:
   workflow_run:
     workflows: ["see offline and set it to public"]
     types:
