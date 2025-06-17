@@ -163,6 +163,7 @@
     <EnablePlanetaryEncounters>false</EnablePlanetaryEncounters>
     <PlanetaryEncounterTimerMin>15</PlanetaryEncounterTimerMin>
     <PlanetaryEncounterTimerMax>30</PlanetaryEncounterTimerMax>
+    <PlanetaryEncounterTimerFirst>5</PlanetaryEncounterTimerFirst>
     <PlanetaryEncounterExistingStructuresRange>7000</PlanetaryEncounterExistingStructuresRange>
     <PlanetaryEncounterAreaLockdownRange>10000</PlanetaryEncounterAreaLockdownRange>
     <PlanetaryEncounterDesiredSpawnRange>6000</PlanetaryEncounterDesiredSpawnRange>
@@ -170,6 +171,9 @@
     <PlanetaryEncounterDespawnTimeout>120</PlanetaryEncounterDespawnTimeout>
     <LimitBlocksBy>BlockPairName</LimitBlocksBy>
     <MaxHudChatMessageCount>100</MaxHudChatMessageCount>
+    <EnableShareInertiaTensor>true</EnableShareInertiaTensor>
+    <EnableUnsafePistonImpulses>true</EnableUnsafePistonImpulses>
+    <EnableUnsafeRotorTorques>true</EnableUnsafeRotorTorques>
   </Settings>
   <Mods>
     <ModItem FriendlyName="StarCore Skybox - Cryogenic Conclusion">
@@ -572,11 +576,6 @@
       <PublishedFileId>2414546174</PublishedFileId>
       <PublishedServiceName>Steam</PublishedServiceName>
     </ModItem>
-    <ModItem FriendlyName="[SpraysAddon]Pinniped's Maratime Flags">
-      <Name>2858915727.sbm</Name>
-      <PublishedFileId>2858915727</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="[SpraysAddon]Hazzard signs">
       <Name>2804100557.sbm</Name>
       <PublishedFileId>2804100557</PublishedFileId>
@@ -599,7 +598,7 @@
     </ModItem>
     <ModItem FriendlyName="Leak Finder">
       <Name>3170315974.sbm</Name>
-      <PublishedFileId>3170315974</PublishedFileId>
+      <PublishedFileId>3170315974</PublishedFileId>Add commentMore actions
       <PublishedServiceName>Steam</PublishedServiceName>
       <IsDependency>true</IsDependency>
     </ModItem>
@@ -611,5 +610,5 @@
     </ModItem>
   </Mods>
   <SessionName>Starcore S5 Dev World</SessionName>
-  <LastSaveTime>2025-01-18T22:29:19.7436403-06:00</LastSaveTime>
+  <LastSaveTime>2025-01-18T22:29:19.7436405-06:00</LastSaveTime>
 </MyObjectBuilder_WorldConfiguration>
