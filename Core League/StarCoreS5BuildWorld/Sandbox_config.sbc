@@ -176,11 +176,6 @@
     <EnableUnsafeRotorTorques>true</EnableUnsafeRotorTorques>
   </Settings>
   <Mods>
-    <ModItem FriendlyName="SCPracticeAI">
-      <Name>3024311955.sbm</Name>
-      <PublishedFileId>3024311955</PublishedFileId>
-      <PublishedServiceName>Steam</PublishedServiceName>
-    </ModItem>
     <ModItem FriendlyName="StarCore Skybox - Cryogenic Conclusion">
       <Name>3384014551.sbm</Name>
       <PublishedFileId>3384014551</PublishedFileId>
